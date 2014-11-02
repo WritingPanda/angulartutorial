@@ -6,8 +6,10 @@
 	</head>
 	<body>
 		<div class="container">
-			<input type="text" ng-model="name" />
+			<!-- AngularJS Directive -->
+			Name: <input type="text" ng-model="name" />
 			<br/>
+			<!-- Bound data -->
 			{{ name }}
 		</div>
 
@@ -16,3 +18,26 @@
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
+
+
+<!-- Notes
+
+	Factories and Services:
+		* Used to make RESTful calls
+		* Used to share data between controllers
+		* Used to handle custom logic
+		* Are Singletons
+	Controllers:
+		* Controllers act as the brain for a view
+		* Retrieve data from a factory/service and store it
+		* Handle events triggered by view
+		* Know how to handle custom logic
+		* Rely on the $scope object to interact with the view
+	Views:
+		* Contain HTML and CSS
+		* Bind to data provided by a controller via the $scope object
+		* Use directives to enhance HTML and render data
+	Routes:
+		* Reference a controller and view
+		* Can include route parameters
+End notes -->
