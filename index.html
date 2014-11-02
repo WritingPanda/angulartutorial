@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html ng-app>
+<html data-ng-app="">
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<title>AngularJS App</title>
 	</head>
-	<body>
+	<body data-ng-init="name='Omar'">
 		<div class="container">
 			<!-- AngularJS Directive -->
-			Name: <input type="text" ng-model="name" />
+			<div data-ng-hide="isHidden">
+				Name: <input type="text" data-ng-model="name" />
+				<br/>
+				<!-- Bound data -->
+				<!-- Another approach instead of using the {{ }} -->
+				<span data-ng-bind="name"></span>
+			</div>
 			<br/>
-			<!-- Bound data -->
-			{{ name }}
+			<div>
+				Hide: <input type="checkbox" data-ng-model="isHidden" />
+			</div>
+			<br/>
+			<div>
+				<button data-ng-click="name='Becky'">Change Name</button>
+			</div>
 		</div>
 
 		<script src="js/angular.min.js"></script>
