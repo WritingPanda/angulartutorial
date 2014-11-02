@@ -26,4 +26,4 @@ If I come into any problems or issues with the course, I will be sure to label t
 
 ### Issues with Course
 
-**None so far!**
+*None so far!*
