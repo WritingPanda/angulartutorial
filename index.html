@@ -2,6 +2,7 @@
 <html data-ng-app="">
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/angular.min.js"></script>
 		<title>More on Directives</title>
 	</head>
 	<body data-ng-init="data={name:'Omar', isVisible: true, loggedIn: false, status: 'string'}">
@@ -12,12 +13,11 @@
 		ng-class
 		ng-show
 	-->
-		<div class="container">
+		<div class="container" data-ng-cloak>
 			<div>
 				<div>
 					Welcome {{ data.name }}
-				</div>
-				<div>
+
 					Login
 				</div>
 				<br/>
@@ -29,7 +29,6 @@
 			</div>
 		</div>
 
-		<script src="js/angular.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
