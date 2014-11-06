@@ -4,8 +4,17 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="js/angular.min.js"></script>
 		<title>More on Directives</title>
+		<style>
+			.red {
+				color: red;
+			}
+
+			.navy {
+				color: navy;
+			}
+		</style>
 	</head>
-	<body data-ng-init="data={name:'Omar', isVisible: true, loggedIn: false, status: 'string'}">
+	<body data-ng-init="data={name:'Omar', isVisible: true, loggedIn: false, status: 'red'}">
 	<!--
 		Practice with
 		ng-cloak
@@ -13,11 +22,20 @@
 		ng-class
 		ng-show
 	-->
+		<!-- ng-cloak is going to hide the div
+		 	 There is an issue with this, however.
+		 	 In order to make sure that there is no flicker,
+		 	 You have to include the ng-cloak style from the
+		 	 Angular docs in your stylesheet to prevent flicker
+		 	 if you are bottom-loading the Angular script. If
+		 	 you are top-loading, it does not matter, and there
+		 	 does not need to be any additions to the stylesheet. -->
 		<div class="container" data-ng-cloak>
-			<div>
-				<div>
+			<div data-ng-switch on="data.loggedIn">
+				<div data-ng-switch-when="true">
 					Welcome {{ data.name }}
-
+				</div>
+				<div data-ng-switch-default ng-class="data.status">
 					Login
 				</div>
 				<br/>
