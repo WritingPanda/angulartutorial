@@ -22,14 +22,16 @@
 		ng-class
 		ng-show
 	-->
-		<!-- ng-cloak is going to hide the div
-		 	 There is an issue with this, however.
-		 	 In order to make sure that there is no flicker,
-		 	 You have to include the ng-cloak style from the
-		 	 Angular docs in your stylesheet to prevent flicker
-		 	 if you are bottom-loading the Angular script. If
-		 	 you are top-loading, it does not matter, and there
-		 	 does not need to be any additions to the stylesheet. -->
+		<!--
+			ng-cloak is going to hide the div
+			There is an issue with this, however.
+			In order to make sure that there is no flicker,
+			You have to include the ng-cloak style from the
+			Angular docs in your stylesheet to prevent flicker
+			if you are bottom-loading the Angular script. If
+			you are top-loading, it does not matter, and there
+			does not need to be any additions to the stylesheet.
+		-->
 		<div class="container" data-ng-cloak>
 			<div data-ng-switch on="data.loggedIn">
 				<div data-ng-switch-when="true">
