@@ -1,0 +1,15 @@
+<h2>Orders</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="order in orders">
+            <td>{{ order.product }}</td>
+            <td>{{ order.total | currency }}</td>
+        </tr>
+    </tbody>
+</table>
