@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a21f68a-89bf-4aa8-959b-eeb5cf7b5760" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/customersFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/customersController.js" afterPath="$PROJECT_DIR$/app/controllers/customersController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/orders.html" afterPath="$PROJECT_DIR$/app/views/orders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ordersController.js" afterPath="$PROJECT_DIR$/app/controllers/ordersController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angulartest.iws" />
@@ -445,7 +440,13 @@
       <option name="project" value="LOCAL" />
       <updated>1416174367081</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Orders are still not showing up correctly, and I am not sure why. Need suggestions.">
+      <created>1416176711813</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1416176711813</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -542,7 +543,8 @@
     <MESSAGE value="Finished lesson 38 on modules, controllers, and different ways to implement them." />
     <MESSAGE value="On lecture 43, Routing. Preparing for that." />
     <MESSAGE value="Created a new route with a new controller and view. The view for the orders controller is not working. No idea why yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new route with a new controller and view. The view for the orders controller is not working. No idea why yet." />
+    <MESSAGE value="Orders are still not showing up correctly, and I am not sure why. Need suggestions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Orders are still not showing up correctly, and I am not sure why. Need suggestions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
