@@ -1,5 +1,5 @@
 (function(){
-    var customersFactory = function() {
+    var customersService = function() {
         var customers = [
             {
                 id: 1,
@@ -83,13 +83,12 @@
             }
         ];
 
-        var factory = {};
-        factory.getCustomers = function() {
+        this.getCustomers = function() {
             return customers;
         };
 
         factory.getCustomer = function(customerId) {
-            for (var i = 0, len = customers.length; i < len; i++) {
+            for (var i = 0, len = cusomters.length; i < len; i++) {
                 if (customers[i].id === parseInt(customerId)) {
                     return customers[i];
                 }
@@ -97,10 +96,8 @@
             return {};
         };
 
-        return factory;
-
     };
 
-    angular.module('customersApp').factory('customersFactory', customersFactory);
+    angular.module('customersApp').service('customersService', customersService);
 
 }());
