@@ -1,6 +1,6 @@
 (function() {
 
-    var CustomersController = function ($scope, customersFactory, appSettings) {
+    var CustomersController = function ($scope, $log, customersFactory, appSettings) {
         $scope.sortBy = 'name';
         $scope.reverse = false;
         $scope.customers = [];
@@ -12,7 +12,7 @@
                     $scope.customers = customers;
                 })
                 .error(function(data, status, headers, config) {
-                   // handle error
+                   $log.log(data.error + ' ' + status);
                 });
         }
 
@@ -25,7 +25,7 @@
     };
 
     // How to deal with Script Minifiers
-    CustomersController.$inject = ['$scope', 'customersFactory', 'appSettings'];
+    CustomersController.$inject = ['$scope', '$log', 'customersFactory', 'appSettings'];
 
     angular.module('customersApp').controller('CustomersController', CustomersController);
 
