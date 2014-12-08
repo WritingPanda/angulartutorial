@@ -8,6 +8,9 @@
             }).when('/orders/:customerId', {
                 controller: 'OrdersController',
                 templateUrl: 'app/views/orders.html'
-        }).otherwise( { redirectTo: '/' } );
+            }).when('/orders', {
+                controller: 'AllOrdersController',
+                templateUrl: 'app/views/allOrders.html'
+            }).otherwise( { redirectTo: '/' } );
     });
 }());

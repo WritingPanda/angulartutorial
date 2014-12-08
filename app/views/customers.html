@@ -9,6 +9,7 @@
         <th data-ng-click="doSort('city')">City</th>
         <th data-ng-click="doSort('orderTotal')">Order</th>
         <th data-ng-click="doSort('joined')">Joined</th>
+        <th>Orders</th>
         <th>&nbsp;</th>
     </tr>
     </thead>
@@ -19,6 +20,7 @@
         <td>{{ cust.orderTotal | currency }}</td>
         <td>{{ cust.joined | date:'longDate' }}</td>
         <td><a href="#/orders/{{ cust.id }}">View Orders</a></td>
+        <td class="text-center"><span class="glyphicon glyphicon-remove delete" data-ng-click="deleteCustomer(cust.id)"></span></td>
     </tr>
     </tbody>
 </table>

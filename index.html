@@ -2,10 +2,22 @@
 <html data-ng-app="customersApp">
 <head>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<title>Customer App</title>
+	<title>Customers App</title>
 </head>
 <body>
-	<div class="container" data-ng-view></div>
+
+	<header class="container">
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li><a href="#/customers">Customers</a></li>
+				<li><a href="#/orders">Orders</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div data-ng-view></div>
+	</main>
 
 	<script src="js/angular.min.js"></script>
 	<script src="js/angular.route.js"></script>
@@ -15,6 +27,7 @@
 	<script src="app/services/customersFactory.js"></script>
 	<script src="app/services/customersService.js"></script>
 	<script src="app/services/values.js"></script>
+	<script src="app/controllers/allOrdersController.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>
