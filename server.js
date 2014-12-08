@@ -1,7 +1,13 @@
-var express = require('express');
-var app = express();
+var express         = require('express'),
+    app             = express();
 
-app.set();
+app.use(express.static(__dirname + '/'));
+
+app.listen(8080);
+
+app.get('/customers', function(req, res) {
+    res.json(customers);
+});
 
 app.get('/customers/:id', function(req, res) {
     var customerId = parseInt(req.params.id);
@@ -14,21 +20,6 @@ app.get('/customers/:id', function(req, res) {
     }
     res.json(data);
 });
-
-app.get('/', function(req, res) {
-    res.render('index', function(err, html) {
-       // ...
-    });
-});
-
-app.get('/customers', function(req, res) {
-    res.json(customers);
-    res.send("hello");
-});
-
-app.listen(8080);
-
-console.log('Express listening on port 8080');
 
 // No DB. Customer data is here.
 var customers = [
