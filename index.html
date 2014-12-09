@@ -2,6 +2,7 @@
 <html data-ng-app="customersApp">
 <head>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
 	<title>Customers App</title>
 </head>
 <body>
@@ -19,16 +20,26 @@
 		<div data-ng-view></div>
 	</main>
 
+	<!-- Angular Scripts -->
 	<script src="js/angular.min.js"></script>
 	<script src="js/angular.route.js"></script>
+
+	<!-- App Scripts -->
 	<script src="app/app.js"></script>
+
+	<!-- Controllers -->
 	<script src="app/controllers/customersController.js"></script>
 	<script src="app/controllers/ordersController.js"></script>
+	<script src="app/controllers/allOrdersController.js"></script>
+
+	<!-- Services -->
 	<script src="app/services/customersFactory.js"></script>
 	<script src="app/services/customersService.js"></script>
 	<script src="app/services/values.js"></script>
-	<script src="app/controllers/allOrdersController.js"></script>
+
+	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

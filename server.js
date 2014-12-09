@@ -7,18 +7,6 @@ app.get('/customers', function(req, res) {
     res.json(customers);
 });
 
-app.get('/customers/:id', function(req, res) {
-    var customerId = parseInt(req.params.id);
-    var data = {};
-    for (var i = 0, len = customers.length; i < len; i++) {
-        if (customers[i].id === customerId) {
-            data = customers[i];
-            break;
-        }
-    }
-    res.json(data);
-});
-
 app.get('/orders', function(req, res) {
     var orders = [];
     for (var i = 0, len = customers.length; i < len; i++) {
@@ -29,7 +17,18 @@ app.get('/orders', function(req, res) {
         }
     }
     res.json(orders);
-    res.send(orders);
+});
+
+app.get('/customers/:id', function(req, res) {
+    var customerId = parseInt(req.params.id);
+    var data = {};
+    for (var i = 0, len = customers.length; i < len; i++) {
+        if (customers[i].id === customerId) {
+            data = customers[i];
+            break;
+        }
+    }
+    res.json(data);
 });
 
 app.delete('/customers/:id', function(req, res) {
