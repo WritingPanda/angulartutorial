@@ -1,5 +1,5 @@
-var express         = require('express'),
-    app             = express();
+var express = require('express'),
+    app = express();
 
 app.use(express.static(__dirname + '/'));
 
@@ -125,6 +125,20 @@ var customers = [
                 id: 7,
                 product: 'Silver leash',
                 total: 300.8952
+            }
+        ]
+    },
+    {
+        id: 6,
+        joined: '2014-12-25',
+        name: 'Santa Claus',
+        city: 'North Pole',
+        orderTotal: 500.00,
+        orders: [
+            {
+                id: 8,
+                product: 'Sleigh',
+                total: 500.00
             }
         ]
     }

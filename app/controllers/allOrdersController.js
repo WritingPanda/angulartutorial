@@ -12,7 +12,7 @@
                     getOrdersTotal();
                 })
                 .error(function(data, status, headers, config) {
-                    // log error
+                    $log.log(data.error + ' ' + status);
                 });
         }
 

@@ -1,7 +1,10 @@
 <h2>{{ appSettings.title }}</h2>
+
 <label for="custFilter">Filter:</label>
 <input id="custFilter" type="text" ng-model="customerFilter.name"/>
+
 <br/><br/>
+
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -14,7 +17,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr data-ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+    <tr data-ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse" class="repeat-animation">
         <td>{{ cust.name }}</td>
         <td>{{ cust.city }}</td>
         <td>{{ cust.orderTotal | currency }}</td>
