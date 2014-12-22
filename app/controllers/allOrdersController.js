@@ -18,7 +18,7 @@
 
         function getOrdersTotal() {
             var total = 0;
-            for (var i = 0, len = $scope.orders.length; i++) {
+            for (var i = 0, len = $scope.orders.length; i < len; i++) {
                 total += $scope.orders[i].total;
             }
             $scope.ordersTotal = total;
