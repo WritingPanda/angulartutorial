@@ -37,4 +37,4 @@ Icon
 .Trashes
 
 # WebStorm IDE files
-.idea/
+.idea/*
