@@ -32,4 +32,4 @@ If I come into any problems or issues with the course, I will be sure to label t
 
 I completed it! Check it out!
 
-![Completion Certificate](CompletionCert.jpg)
+![Completion Certificate](https://udemy-certificate.s3.amazonaws.com/image/UC-QLFC8X55.jpg)
