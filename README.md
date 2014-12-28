@@ -29,3 +29,7 @@ If I come into any problems or issues with the course, I will be sure to label t
 * He uses an older version of Express, which causes problems as soon as he gets to that section
 * In the later lectures, he goes so quickly that it is difficult to follow.
 * There is something breaking in my code that I have a hard time figuring out. I think he might have glanced over something that I missed. I am not sure.
+
+I completed it! Check it out!
+
+![Completion Certificate](CompletionCert.jpg)
