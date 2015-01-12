@@ -1,6 +1,6 @@
 {
   "name": "customersApp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "server.js",
   "repository": {
     "type": "git",
