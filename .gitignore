@@ -37,4 +37,7 @@ Icon
 .Trashes
 
 # WebStorm IDE files
-.idea/*
+.idea/
+
+#Node Modules
+node_modules/
